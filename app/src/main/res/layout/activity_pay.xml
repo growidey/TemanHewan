@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PayActivity">
+
+    <ImageView
+        android:id="@+id/iv_booking"
+        android:layout_width="414dp"
+        android:layout_height="162dp"
+        android:background="@drawable/ic_vektor_1_1"
+        android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detail_pembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/detail_pembayaran"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_booking" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/detail_pembayaran"
+        app:layout_constraintStart_toStartOf="@id/detail_pembayaran"
+        app:layout_constraintEnd_toEndOf="@id/detail_pembayaran"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_user"
+        android:layout_width="96dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_booking" />
+
+    <TextView
+        android:id="@+id/pay_name_doktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/name_doctor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_user"
+        app:layout_constraintStart_toStartOf="@+id/iv_user"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user" />
+
+    <TextView
+        android:id="@+id/pay_harga_doktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/harga_doctor"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toEndOf="@+id/pay_total_doktor"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="#000000"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay_name_doktor" />
+
+    <TextView
+        android:id="@+id/pay_total_doktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/total"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/pay_metode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/pembayaran"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay_total_doktor" />
+
+    <ImageView
+        android:id="@+id/logo_dana"
+        android:layout_width="61dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/ic_logo_dana"
+        app:layout_constraintBottom_toTopOf="@+id/ketentuan"
+        app:layout_constraintStart_toEndOf="@+id/radio_dana"
+        app:layout_constraintTop_toBottomOf="@+id/radio_shopee" />
+
+    <ImageView
+        android:id="@+id/logo_shoeepay"
+        android:layout_width="61dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/ic_shopeepay"
+        app:layout_constraintBottom_toTopOf="@+id/logo_dana"
+        app:layout_constraintStart_toEndOf="@+id/radio_shopee"
+        app:layout_constraintTop_toBottomOf="@+id/pay_metode"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="@string/logo" />
+
+    <RadioButton
+        android:id="@+id/radio_shopee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/shopeepay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay_metode" />
+
+    <RadioButton
+        android:id="@+id/radio_dana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/dana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_shopee" />
+
+    <TextView
+        android:id="@+id/ketentuan"
+        android:layout_width="393dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/ketentuan"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/btnBayar"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="84dp"
+        android:text="@string/btn_bayar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

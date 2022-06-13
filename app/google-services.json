@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "781704540408",
+    "project_id": "temanhewan-1fad0",
+    "storage_bucket": "temanhewan-1fad0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781704540408:android:adef67827979ca382fcb0d",
+        "android_client_info": {
+          "package_name": "com.capstone.temanhewan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781704540408-kkeqb6qcu23t6s41eetncuhf2fvkp3pl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capstone.temanhewan",
+            "certificate_hash": "132c5a1ad59f23aa5e9c2c4c3c363ee438aadc40"
+          }
+        },
+        {
+          "client_id": "781704540408-11eo2uinr22i8vbk6dtgfniin2mor60n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4f2ronaEvPncxkBYFIWILDcZGvb0t1v0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781704540408-11eo2uinr22i8vbk6dtgfniin2mor60n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

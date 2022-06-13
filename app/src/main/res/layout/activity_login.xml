@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="157dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/ic_logo_th3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logo" />
+
+    <TextView
+        android:id="@+id/tv_tittle_login"
+        android:layout_width="298dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/tittle_login"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_login" />
+
+    <com.capstone.temanhewan.customview.MyEditText
+        android:id="@+id/et_login_email"
+        android:layout_width="317dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tittle_login"
+        app:layout_constraintStart_toStartOf="@+id/tv_tittle_login"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tittle_login" />
+
+    <com.capstone.temanhewan.customview.MyEditText
+        android:id="@+id/et_login_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_marginTop="18dp"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintEnd_toEndOf="@+id/et_login_email"
+        app:layout_constraintStart_toStartOf="@+id/et_login_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_email" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/MyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/btn_login"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_login_pass"
+        app:layout_constraintStart_toStartOf="@+id/et_login_pass"
+        app:layout_constraintTop_toBottomOf="@+id/et_login_pass" />
+
+    <TextView
+        android:id="@+id/tv_no_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/no_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/tv_to_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/btn_sign_up"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/btn_sign_up"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toEndOf="@+id/tv_no_account"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_google"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="68dp"-->
+<!--        android:fontFamily="@font/poppins_medium"-->
+<!--        android:text="@string/tv_google"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/btn_login"-->
+<!--        app:layout_constraintHorizontal_bias="0.492"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/btn_login"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_login" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/btn_google"-->
+<!--        android:layout_width="24dp"-->
+<!--        android:layout_height="24dp"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:contentDescription="@string/google_icon"-->
+<!--        android:src="@drawable/ic_google"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/iv_logo_feet"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/tv_google"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/tv_google"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_google"-->
+<!--        app:layout_constraintVertical_bias="0.142" />-->
+
+    <ImageView
+        android:id="@+id/iv_logo_feet"
+        android:layout_width="406dp"
+        android:layout_height="119dp"
+        android:background="@drawable/ic_logo_th4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/logo" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

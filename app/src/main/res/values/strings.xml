@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Teman Hewan</string>
+    <string name="konsultasi">Konsultasi dengan Dokter</string>
+    <string name="tittle_login">Hai, Selamat datang kembali!</string>
+    <string name="text_signup">Konsultasikan hewan kesayanganmu disini.</string>
+    <string name="email">Email yang terdaftar</string>
+    <string name="email_sign_up">Masukan email kamu</string>
+    <string name="password">Masukan password</string>
+    <string name="btn_login">Login</string>
+    <string name="no_account">Belum punya akun?</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="tv_chatbot">Chat dengan Bot</string>
+    <string name="tittle_signup">Buat akun dulu Yuk!</string>
+    <string name="have_account">Sudah punya akun?</string>
+    <string name="name">Masukan nama kamu</string>
+    <string name="logo">Logo</string>
+    <string name="signup_success">Yeay, Akunmu sudah berhasil dibuat!</string>
+    <string name="empty_name">Isi Nama Kamu</string>
+    <string name="empty_email">Isi Email Kamu</string>
+    <string name="empty_pass">Password harus lebih dari 6 karakter</string>
+    <string name="ava_doctor">Avatar Doctor</string>
+    <string name="name_doctor">Name Doctor</string>
+    <string name="price_doctor">Rp 20.000</string>
+    <string name="btn_chat">Konsultasi</string>
+    <string name="chatbot_2">Hello Peter!</string>
+    <string name="chatbot_1">Hai, Aku Peter! ada yang bisa aku bantu?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="booking">Data Konsultasi</string>
+    <string name="nomor">081274563283</string>
+    <string name="jenis_hewan">Kucing</string>
+    <string name="vektor">vektor_!</string>
+    <string name="tv_jenis_hewan">Jenis Hewan</string>
+    <string name="tv_nomor_user">No. Hp</string>
+    <string name="tv_name_user">Nama</string>
+    <string name="lanjut_bayar">LANJUT BAYAR</string>
+    <string name="sign_up_success">Yeay, Kamu berhasil Sign Up!</string>
+    <string name="home_menu">Home</string>
+    <string name="Profile_menu">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="edit_name">Name</string>
+    <string name="edit_email">Email</string>
+    <string name="edit_phone">No WhatsApp</string>
+    <string name="phone_number">Masukkan nomor Whatsapp</string>
+    <string name="invalid_email">Email tidak Valid!</string>
+    <string name="login_success">Selamat Datang $name</string>
+    <string name="login_failed">Login gagal karena %1$s</string>
+    <string name="google_icon">google</string>
+    <string name="ic_feet">Pet Feet</string>
+    <string name="tv_google">Masuk dengan</string>
+    <string name="web_client_id">default_web_client_id</string>
+    <string name="google_new_user">Akun google berhasil dibuat</string>
+    <string name="google_login">LoggedIn</string>
+    <string name="signup_failed">Daftar gagal karena %1$s</string>
+    <string name="logout_auth">Kamu keluar dari akun</string>
+    <string name="account">Akun</string>
+    <string name="about">About</string>
+    <string name="change_profile">Edit Profile</string>
+    <string name="change_password">Edit Password</string>
+    <string name="developer">About</string>
+    <string name="change_ava">Edit Photo</string>
+    <string name="save">Save Profile</string>
+    <string name="save_success">Profile berhasil di ubah</string>
+    <string name="save_failed">Profile gagal di ubah</string>
+    <string name="email_verif">Silahkan cek email kamu untuk verifikasi $email</string>
+    <string name="edit_nomor">No WhatsApp</string>
+    <string name="forget_password">Lupa Passsword?</string>
+    <string name="tittle_edit_profile">Edit Profile</string>
+    <string name="tittle_chatbot">ChatBot</string>
+    <string name="et_chatbot">Type a message..</string>
+    <string name="tittle_about">Abous Us</string>
+    <string name="nama_pemilik">Nama pemilik hewan</string>
+    <string name="nomor_pemilik">Nomor Whatsapp</string>
+    <string name="sarah">Sarah</string>
+    <string name="next">lanjut</string>
+    <string name="detail_pembayaran">Detail Pembayaran</string>
+    <string name="detail_konsultasi">Detail Konsultasi</string>
+    <string name="harga_doctor">Biaya konsul</string>
+    <string name="total">Total Biaya</string>
+    <string name="pembayaran">Metode Pembayaran</string>
+    <string name="dana">Dana</string>
+    <string name="shopeepay">ShopeePay</string>
+    <string name="ketentuan">Dengan menggunakan Fitur Layanan TemanHewan. Anda telah menyetujui Syarat dan Ketentuan Penggunaan dan Kebujakan Privasi.</string>
+    <string name="btn_bayar">Bayar</string>
+    <string name="back">Back to Home</string>
+
+    <string-array name="data_name">
+        <item>Drh. Nina</item>
+        <item>Drh. Tiara</item>
+        <item>Drh. Andi</item>
+        <item>Drh. Celine</item>
+        <item>Drh. Zaky</item>
+        <item>Drh. Kim</item>
+        <item>Drh. Jessica</item>
+        <item>Drh. Andrew</item>
+    </string-array>
+
+    <string-array name="data_price">
+        <item>Rp 20.000</item>
+        <item>Rp 35.000</item>
+        <item>Rp 20.000</item>
+        <item>Rp 25.000</item>
+        <item>Rp 30.000</item>
+        <item>Rp 35.000</item>
+        <item>Rp 20.000</item>
+        <item>Rp 25.000</item>
+    </string-array>
+
+    <integer-array name="data_avatar">
+        <item>@drawable/drh_1</item>
+        <item>@drawable/drh_2</item>
+        <item>@drawable/drh_3</item>
+        <item>@drawable/drh_4</item>
+        <item>@drawable/drh_5</item>
+        <item>@drawable/drh_6</item>
+        <item>@drawable/drh_7</item>
+        <item>@drawable/drh_8</item>
+    </integer-array>
+
+
+</resources>
